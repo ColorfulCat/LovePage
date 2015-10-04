@@ -64,9 +64,11 @@
 			</div>
 		</div>
 	</div>
-	<audio id="bgaudio" src="music/circulation.mp3"></audio>
+	<audio id="bgaudio" autoplay="autoplay" loop="loop" src="music/circulation.mp3"></audio>
 	<script type="text/javascript">
-			document.getElementById('bgaudio').play();
+		var audio=document.getElementById("bgaudio");
+		audio.pause();//暂停
+		audio.play();//播放
 	</script>
 </div>
 
